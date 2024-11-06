@@ -1,6 +1,5 @@
 #include <iostream>
 #include <fstream>
-// #include <string>
 
 
 int main()
@@ -33,17 +32,27 @@ int main()
         std::cout<< filenametwo<<"is not open\n";
         return 0;
     }
+    while (s1.empty())
+    {
     std::cout << "[.] Enter The String1: ";
-    std::getline(std::cin, s1);
+        std::getline(std::cin, s1);
+    }
+    
+    while (s2.empty())
+    {
     std::cout << "[.] Enter The String2: ";
-    std::getline(std::cin, s2);
+        std::getline(std::cin, s2);
+    }
+    
+    // if(s2==s1)
+    //     return 1;
 
     while (std::getline(fileone,buffer,'\n'))
     {
         std::cout<< buffer<< "\n";
         size_t i =0;
         size_t j =0;
-        while ((i = buffer.find(s1,i) )!= std::string::npos)
+        while (s2 != s1&&(i = buffer.find(s1,i) )!= std::string::npos)
         {
             buffer =buffer.substr(0,i)+s2+buffer.substr(i+s2.length(),buffer.length());
         }
