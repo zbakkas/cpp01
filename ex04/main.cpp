@@ -49,14 +49,16 @@ int main()
 
     while (std::getline(fileone,buffer,'\n'))
     {
-        std::cout<< buffer<< "\n";
+        // std::cout<< buffer<< "\n";
         size_t i =0;
         size_t j =0;
-        while (s2 != s1&&(i = buffer.find(s1,i) )!= std::string::npos)
+
+        while (s2 != s1 && (i = buffer.find(s1,i) )!= std::string::npos)
         {
             buffer =buffer.substr(0,i)+s2+buffer.substr(i+s2.length(),buffer.length());
+            // std::cout<< buffer<< "\n";
         }
-        filetwo<< buffer<<"\n";
+        filetwo << buffer <<"\n";
         
     }
     

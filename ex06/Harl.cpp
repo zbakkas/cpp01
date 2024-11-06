@@ -4,19 +4,23 @@
 
 void Harl::debug()
 {
-    std::cout << "debug";
+    std::cout << "[ DEBUG ]\n";
+    std::cout << "debug\n";
 }
 void Harl::info()
 {
-    std::cout << "info";
+    std::cout << "[ INFO ]\n";
+    std::cout << "info\n";
 }
 void Harl::warning()
 {
-    std::cout << "warning";
+    std::cout << "[ WARNING ]\n";
+    std::cout << "warning\n";
 }
 void Harl::error()
 {
-    std::cout << "error";
+    std::cout << "[ ERROR ]\n";
+    std::cout << "error\n";
 }
 
 void Harl::complain(std::string level)
@@ -31,11 +35,12 @@ void Harl::complain(std::string level)
     {
         i++;
     }
-    if(i<4 && level==str[i])
+    while(i<4)
     {
-        (this->*cont[i])();
-        return;
+        (this->*cont[i++])();
     }
+    if(i>=4)
+        return;
     std::cout << "[ Probably complaining about insignificant problems ]";
 
 }

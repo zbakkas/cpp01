@@ -1,0 +1,9 @@
+total 152
+drwxr-xr-x   8 erwtdf   candidates    272 Nov  6 19:19 .
+drwxr-xr-x  11 erwtdf   candidates    374 Nov  6 18:46 ..
+-rw-r--r--   1 erwtdf   candidates      0 Nov  6 15:00 Makefile
+-rwxr-xr-x   1 erwtdf   candidates  66472 Nov  6 19:19 a.out
+-rw-r--r--   1 erwtdf   candidates     21 Nov  6 15:00 file.txt
+-rw-r--r--   1 erwtdf   candidates      0 Nov  6 19:19 l
+-rw-r--r--   1 erwtdf   candidates   1378 Nov  6 18:38 main.cpp
+-rw-r--r--   1 erwtdf   candidates      0 Nov  6 15:00 tile.replace
