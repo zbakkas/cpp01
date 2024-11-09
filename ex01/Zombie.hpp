@@ -6,12 +6,14 @@
 /*   By: zbakkas <zouhirbakkas@gmail.com>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 17:21:35 by zbakkas           #+#    #+#             */
-/*   Updated: 2024/11/04 19:51:33 by zbakkas          ###   ########.fr       */
+/*   Updated: 2024/11/09 17:03:24 by zbakkas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <iostream>
+#ifndef ZOMBIE_HPP
+#define ZOMBIE_HPP
 
+#include <iostream>
 
 class Zombie
 {
@@ -28,3 +30,5 @@ class Zombie
 
 
 Zombie* zombieHorde( int N, std::string name );
+
+#endif

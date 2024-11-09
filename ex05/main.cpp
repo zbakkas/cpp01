@@ -7,7 +7,7 @@ int main()
     std::string str;
     while (str.empty())
     {
-        std::cout << "[.] Enter The String1: ";
+        std::cout << "[.] Enter The String: ";
         std::getline(std::cin, str);
     }
     harl.complain(str);
