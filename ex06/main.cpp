@@ -3,7 +3,13 @@
 
 int main(int arc,char **arv)
 {
-    Harl harl;
-   
-    harl.complain(arv[1]);
+    if(arc==2)
+    {
+        Harl harl;
+        harl.complain(arv[1]);
+    }
+    else
+    {
+        std::cout<< "one arg\n";
+    }
 }

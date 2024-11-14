@@ -6,7 +6,7 @@
 /*   By: zbakkas <zouhirbakkas@gmail.com>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 11:45:56 by zbakkas           #+#    #+#             */
-/*   Updated: 2024/11/05 12:10:56 by zbakkas          ###   ########.fr       */
+/*   Updated: 2024/11/14 13:53:56 by zbakkas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ class Weapon
     private:
         std::string type;
     public:
-        const std::string getType();
+        const std::string& getType();
         void setType(std::string str);
         Weapon();
         Weapon(std::string str);

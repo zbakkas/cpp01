@@ -6,7 +6,7 @@
 /*   By: zbakkas <zouhirbakkas@gmail.com>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 11:45:44 by zbakkas           #+#    #+#             */
-/*   Updated: 2024/11/05 12:11:02 by zbakkas          ###   ########.fr       */
+/*   Updated: 2024/11/14 13:56:20 by zbakkas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ Weapon :: Weapon(std::string str)
 {
     type =str;
 }
-const std::string Weapon:: getType()
+const std::string& Weapon:: getType()
 {
     return type;
 }

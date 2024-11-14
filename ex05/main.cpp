@@ -1,14 +1,15 @@
 
 #include "Harl.hpp"
 
-int main()
+int main(int arc ,char **arv)
 {
-    Harl harl;
-    std::string str;
-    while (str.empty())
+    if(arc!=2)
     {
-        std::cout << "[.] Enter The String: ";
-        std::getline(std::cin, str);
+        std::cout<<"bad args";
+        return 1;
     }
+    Harl harl;
+    std::string str = arv[1];
+    
     harl.complain(str);
 }

@@ -6,7 +6,7 @@
 /*   By: zbakkas <zouhirbakkas@gmail.com>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 18:14:19 by zbakkas           #+#    #+#             */
-/*   Updated: 2024/11/04 19:55:24 by zbakkas          ###   ########.fr       */
+/*   Updated: 2024/11/12 20:54:54 by zbakkas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,6 @@
 
 int main()
 {
-    Zombie *zombie = zombieHorde(5,"ba");
+    Zombie *zombie = zombieHorde(-9,"NULL");
     delete[] zombie;
 }

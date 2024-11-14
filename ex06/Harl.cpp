@@ -26,21 +26,21 @@ void Harl::error()
 void Harl::complain(std::string level)
 {
 
-    //Array of function pointers to private member functions
+    //Function Pointer to Member Function
+        //Syntax
+    // return_type (ClassName::*pointer_name)(argument_types) = &ClassName::member_function;
     void(Harl::*cont[4])() = {&Harl::debug,&Harl::info,&Harl::warning,&Harl::error};
 
     std::string str[4] ={"DEBUG","INFO","WARNING","ERROR"};
     int  i =0;
     while (str[i]!=level)
-    {
         i++;
+    if(i>=4)
+    {
+        std::cout << "[ Probably complaining about insignificant problems ]";
+        return ;
     }
     while(i<4)
-    {
         (this->*cont[i++])();
-    }
-    if(i>=4)
-        return;
-    std::cout << "[ Probably complaining about insignificant problems ]";
 
 }

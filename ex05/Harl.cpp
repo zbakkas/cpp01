@@ -4,19 +4,19 @@
 
 void Harl::debug()
 {
-    std::cout << "debug";
+    std::cout << "===>debug";
 }
 void Harl::info()
 {
-    std::cout << "info";
+    std::cout << "===>info";
 }
 void Harl::warning()
 {
-    std::cout << "warning";
+    std::cout << "===>warning";
 }
 void Harl::error()
 {
-    std::cout << "error";
+    std::cout << "===>error";
 }
 
 void Harl::complain(std::string level)

@@ -1,7 +1,7 @@
 CPP = c++
 CFLAGS =  -Wall -Wextra -Werror -std=c++98
 FILES = main.cpp Harl.cpp
-NAME= HARL
+NAME= harlFilter
 OBJ=$(FILES:.cpp=.o)
 
 all:$(NAME)
@@ -9,7 +9,7 @@ all:$(NAME)
 $(NAME): $(OBJ)
 	$(CPP) $(CFLAGS) $(OBJ) -o $(NAME)
 
-%.o : %.cpp 
+%.o : %.cpp Harl.hpp
 	$(CPP) $(CFLAGS) -c $< -o $@
 
 clean:
